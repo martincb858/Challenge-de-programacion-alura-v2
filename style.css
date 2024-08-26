@@ -12,6 +12,11 @@
     --tamaño-principal: 32px;
     --color-boton-encriptar:#F3F5FC;
 }
+.imagen-alura{
+    position: absolute;
+    left: 6%;
+    top: 5%;
+}
 .encriptacion{
     position: relative;
     width: 100vw;
@@ -134,7 +139,8 @@
     align-items: center;
     text-align: center;
     overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado largo */
-    max-height: 100%; /* Limita la altura máxima para mantener el contenido dentro del contenedor */
+    max-height: calc(90% - 60px); /* Ajusta el tamaño máximo del contenedor de texto restando la altura del botón */
+    margin-bottom: 8px; /* Añade un margen inferior para dar espacio al botón */
 }
 .texto-encriptado h2{
     font-style: normal;
@@ -170,12 +176,17 @@
     font-family: var(--fuente-encriptador);
     font-size: 16px;
     color: var(--texto-input);
+    margin-top: auto; /* Hace que el botón se posicione al final del contenedor */
 }
 .copiar:disabled{
     display: none;
 }
 
 @media(max-width: 768px){
+    .imagen-alura{
+        left: 6%;
+        top: 5%;
+    }
     .encriptacion{
         display: flex;
         flex-direction: column;
@@ -234,8 +245,9 @@
         display: none;
     }
     .texto-encriptado{
-        height: 70%;
         overflow-y: auto;
+        max-height: calc(100% - 60px); /* Ajusta el tamaño máximo del contenedor de texto restando la altura del botón */
+        margin-bottom: 13%; 
     }
     .copiar{
         padding: 3%;
@@ -245,6 +257,10 @@
 }
 
 @media(max-width: 375px){
+    .imagen-alura{
+        left: 6%;
+        top: 2%;
+    }
     .encriptacion{
         display: flex;
         flex-direction: column;
@@ -321,6 +337,7 @@
    .texto-encriptado{
         top: 5%;
         overflow-y: auto;
-        height:70%;
+        max-height: calc(100% - 0px); /* Ajusta el tamaño máximo del contenedor de texto restando la altura del botón */
+        margin-bottom: 19%; 
    }
 }
