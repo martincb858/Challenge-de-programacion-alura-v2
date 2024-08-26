@@ -8,7 +8,7 @@ function encriptar(){
     let contenedorEncriptado= document.getElementById("encriptado")
     if (document.getElementById("input").value.length != 0){
         if (window.innerWidth <=375 ){
-            contenedorEncriptado.style.height="44%"
+            contenedorEncriptado.style.height="50%"
         }
         if (window.innerWidth <=768 ){
             contenedorEncriptado.style.height="30%"
@@ -51,7 +51,7 @@ function desencriptar(){
     let copiar= document.getElementById("copiar");
     if (document.getElementById("input").value.length != 0){
         if (window.innerWidth <=375 ){
-            contenedorEncriptado.style.height="44%"
+            contenedorEncriptado.style.height="50%"
         }
         if (window.innerWidth <=768 ){
             contenedorEncriptado.style.height="30%"
