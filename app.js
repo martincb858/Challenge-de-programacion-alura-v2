@@ -5,7 +5,7 @@ function encriptar(){
     let imagen = document.getElementById('imagen');
     let encriptado= document.getElementById("texto-encriptado");
     let copiar= document.getElementById("copiar");
-    let contenedorEncriptado= document.getElementById("encriptado")
+    let contenedorEncriptado= document.getElementById("encriptado");
     if (document.getElementById("input").value.length != 0){
         if (window.innerWidth <=375 ){
             contenedorEncriptado.style.height="100%"
@@ -49,6 +49,7 @@ function desencriptar(){
     let imagen = document.getElementById('imagen');
     let encriptado= document.getElementById("texto-encriptado");
     let copiar= document.getElementById("copiar");
+    let contenedorEncriptado= document.getElementById("encriptado")
     if (document.getElementById("input").value.length != 0){
         if (window.innerWidth <=375 ){
             contenedorEncriptado.style.height="50%"
